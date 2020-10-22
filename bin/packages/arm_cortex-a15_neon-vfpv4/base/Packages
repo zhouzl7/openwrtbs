@@ -59,10 +59,10 @@ Depends: libc, libubox20191228, libubus20191227, libuci20130104, libip4tc2, libi
 License: ISC
 Section: net
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 47487
+Installed-Size: 47533
 Filename: firewall_2020-09-05-8c2f9fad-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 48354
-SHA256sum: 0b196929501d59fe30bfbb5f926424dad4b288e3f42c5ac21d065f28557984c9
+Size: 48348
+SHA256sum: 974e00444b87f935adbebcf5f86c3951f7a6ec874b0875b59e2a4a60c183a5a1
 Description:  This package provides a config-compatible C implementation of the UCI firewall.
 
 Package: getrandom
