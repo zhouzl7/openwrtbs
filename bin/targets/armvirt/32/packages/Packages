@@ -1,0 +1,441 @@
+Package: base-files
+Version: 232-r14736-6a56a6eb30
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+License: GPL-2.0
+Section: base
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 40951
+Filename: base-files_232-r14736-6a56a6eb30_arm_cortex-a15_neon-vfpv4.ipk
+Size: 41975
+SHA256sum: 6efd653f399b55e6c64c37baf5ebcba99a4ea62f1880838a95671632edc07b67
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: dropbear
+Version: 2020.80-3
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+License: MIT
+Section: net
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 97722
+Filename: dropbear_2020.80-3_arm_cortex-a15_neon-vfpv4.ipk
+Size: 98460
+SHA256sum: efc661a162a644c789c6eaf3ea0f21efc9387e40b69744703a89aa54f7855e3f
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2020-10-16-f25ab8a8-1
+Depends: libc, ubox
+License: GPL-2.0
+Section: base
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 15174
+Filename: fstools_2020-10-16-f25ab8a8-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 15895
+SHA256sum: 455c471687650e91113a8c851d7d2a489ed667fda03bb3ec26441aeb85329707
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3766
+Filename: fwtool_2019-11-12-8f7fe925-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4537
+SHA256sum: 99810cdc789dff010f59b98570a7c4ab824426b2588bef6b986a01c90c1897d1
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.4-1
+Depends: libc, kmod-ip6tables, iptables
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 215
+Filename: ip6tables_1.8.4-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 974
+SHA256sum: 9028f008f52edf2007f9a7ca4bb155dc4ba458a7e7235271803c560d9a40dbc1
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.8.4-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 24335
+Filename: iptables_1.8.4-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 25226
+SHA256sum: b18ede358bba772561389c7f5056024c35013039ad2ecf0dc6c5d6ef8d3edd1c
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: kmod-ip6tables
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 7589
+Filename: kmod-ip6tables_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 8374
+SHA256sum: 1ebd58f1448042f9c090679365adb197ebaf034b4cd4b161516bccf0a2767a56
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-ipt-core, kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3050
+Filename: kmod-ipt-conntrack_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3879
+SHA256sum: 0f4a64d94bea7e0abd5147b50d81d200deccc72594125c7b948ef711ee928e3b
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-reject, kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 18357
+Filename: kmod-ipt-core_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 19158
+SHA256sum: 9ae434b77f22890e835b7196403d7412b564e298cc9e0e616653ff179de98f1a
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-ipt-core, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 4686
+Filename: kmod-ipt-nat_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5482
+SHA256sum: c91cc27b17f2ad9e9bbcd41952f7dd0fa627fd2c97059b5bf65494a0f09d1879
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-ipt-core, kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3497
+Filename: kmod-ipt-offload_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4262
+SHA256sum: 47249b306d1b5c3b103c7ad6a2587f36b73273a05fb3fbb950eae2181aec3237
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-lib-crc-ccitt
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2208
+Filename: kmod-lib-crc-ccitt_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2994
+SHA256sum: 1fdc36896a714308840d7c0d11cbaace92108f121927dd16b8ad9f96cb03dbce
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-nf-conntrack6
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 105
+Filename: kmod-nf-conntrack6_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 859
+SHA256sum: 36511a357cb2a76f86097c16434406892c522aaf5db5550cdfad6ec7870e1a02
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 47908
+Filename: kmod-nf-conntrack_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 48562
+SHA256sum: 5aac8952281383b8b794e53ab53c909620f4c291d53037870b6b8c244c7db261
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 11249
+Filename: kmod-nf-flow_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12007
+SHA256sum: 699eb95ff4f03a31b40910e4cf914a385ab7d97c6135e452cc9a3d8701ade48c
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 8693
+Filename: kmod-nf-ipt6_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9461
+SHA256sum: 1657c6c2bde0091d9171be57a2d68f8cbb79f59c3b0897b27fe759e77aaa162a
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 18017
+Filename: kmod-nf-ipt_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 18744
+SHA256sum: 98c1963fbcc6244e3afb45ad5e3e45c51b6f66acad0cec6fb4cce3b77059ebd1
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 12922
+Filename: kmod-nf-nat_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 13662
+SHA256sum: 9138f3ec7b130eef349e35010d77a702de645aff24be23ced5d7b87eae8b0ecb
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2507
+Filename: kmod-nf-reject6_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3255
+SHA256sum: 67fdece08ddd365cecbab19f05689661a3d3ea8437fd82b2830fef8f361221b1
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2115
+Filename: kmod-nf-reject_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2902
+SHA256sum: 5d54fa65cceea41fec62bd79ff233c65bbaf820718e8065d719dd492d34d4d2d
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-ppp
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-lib-crc-ccitt, kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 23174
+Filename: kmod-ppp_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 23925
+SHA256sum: 0f05b12420f49cc8a172289bce26edd5a3b327ce4229686fc23cb7409787605d
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-ppp, kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 7507
+Filename: kmod-pppoe_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 8297
+SHA256sum: 66631331df3e029d78462e86fcad0996db24b4e6ac73ad66e2e005fdc000397b
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 1861
+Filename: kmod-pppox_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2652
+SHA256sum: 6710179052360e1f5fb26a6212f559e7a1b37a315e6705cb6db67f5a35e24ad9
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-slhc
+Version: 5.4.72-1
+Depends: kernel (=5.4.72-1-d6b238f6a976902de01df395546b859b), kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3874
+Filename: kmod-slhc_5.4.72-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4621
+SHA256sum: b0c043a19389714215f9f5d2dba18a9bd8e1f0bbe07f3b99dea19a11d9eef1f2
+Description:  Serial Line Header Compression
+
+Package: libgcc1
+Version: 8.4.0-2
+Provides: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 21614
+Filename: libgcc1_8.4.0-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 22361
+SHA256sum: 4239337d1f51ba829949209e4e09366f1b23b60f4db7edab5f76ea550e7b1634
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip4tc
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 19429
+Filename: libip4tc2_1.8.4-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 20233
+SHA256sum: e42ce205b0c60d045a65f536f40cbe71aa0768e9a5b6bcfad368fae33a0900ce
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip6tc
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 19195
+Filename: libip6tc2_1.8.4-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 19977
+SHA256sum: 75e1906620e3e0d07eb7cf8bf8013ce49610e94340584835bf8107f30390ab9a
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libpthread
+Version: 1.1.24-2
+Depends: libgcc1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 125
+Filename: libpthread_1.1.24-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 913
+SHA256sum: 73945d906edcca48ecdc752ef65f077a967aa359045ad7416a0e18b44471352d
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-2
+Depends: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 125
+Filename: librt_1.1.24-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 922
+SHA256sum: 31f8add1c6e2af3f1716841c7a62f6ca3318187b5e14f69359d171859e397b9e
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables12
+Version: 1.8.4-1
+Depends: libc
+Provides: libxtables
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 42423
+Filename: libxtables12_1.8.4-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 43156
+SHA256sum: 175611813321eeff7231fa55ff48ee36d8851c23fd3534d87eb9bace58179d74
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20191228
+License: GPL-2.0+
+Section: utils
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 9810
+Filename: mtd_26_arm_cortex-a15_neon-vfpv4.ipk
+Size: 10535
+SHA256sum: e84307b1b6d59e632c630cea80a8b983a0f88d650e7bfc38073149eb7beb2114
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
