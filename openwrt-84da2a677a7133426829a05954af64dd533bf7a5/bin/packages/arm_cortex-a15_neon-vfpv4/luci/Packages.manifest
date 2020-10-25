@@ -9,8 +9,8 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 3207
 Filename: liblucihttp-lua_2019-07-05-a34a17d5-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 3971
-SHA256sum: c377770bee9fed8b62d331dda7b3358c315e3a03d92b57f1e7305299834114ad
+Size: 3972
+SHA256sum: 30d0690c9978077af613aa191010785ca7dfa7f9f13b5ea8fa266488f02eb324
 Description:  Lua binding for the LuCI HTTP utility library
 
 Package: liblucihttp
@@ -22,35 +22,35 @@ LicenseFiles: LICENSE
 Section: libs
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 6808
+Installed-Size: 6804
 Filename: liblucihttp_2019-07-05-a34a17d5-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 7619
-SHA256sum: ebc756fec6bf312ff0cd83527ec093e16e4dbf68cc1ff90038c507892d353027
+Size: 7608
+SHA256sum: fedb9ffe412ff6c956b972b5d6ba132a392c4033b0e85952496c90cd994dd486
 Description:  LuCI HTTP utility library
 
 Package: luci-app-firewall
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, firewall
 Source: feeds/luci/applications/luci-app-firewall
 License: Apache-2.0
 Section: luci
 Architecture: all
-Installed-Size: 13810
-Filename: luci-app-firewall_git-20.296.73795-2df760c_all.ipk
+Installed-Size: 13805
+Filename: luci-app-firewall_git-20.297.75914-63aea8f_all.ipk
 Size: 14601
-SHA256sum: 37d4e1256cbb7e619efd277253e9f29f255e512e79a9bcc6242e16938971b080
+SHA256sum: f858b5f5bd6796c7651eb2cb07cada12aa3b8df6317693d77092df21b06b0089
 Description:  Firewall and Portforwarding application
 
 Package: luci-app-opkg
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, opkg
 Source: feeds/luci/applications/luci-app-opkg
 Section: luci
 Architecture: all
-Installed-Size: 8406
-Filename: luci-app-opkg_git-20.296.73795-2df760c_all.ipk
-Size: 9228
-SHA256sum: dc1761d7c7aad62a57e1bbfaa6ab16bdded5c3addcf155b9e42e9210c8b1d3e1
+Installed-Size: 8405
+Filename: luci-app-opkg_git-20.297.75914-63aea8f_all.ipk
+Size: 9230
+SHA256sum: b5fd7f0350bea93198c67ecec35ca80c61327f43efe323b3b54cc2bed9f511fa
 Description:  OPKG package management application
 
 Package: luci-i18n-firewall-zh-cn
@@ -79,52 +79,52 @@ SHA256sum: 94738c65665816151016f1f6e6f5f846a4e70a485c35273eae35d23207df7af1
 Description:  Translation for luci-app-opkg - 简体中文 (Chinese Simplified)
 
 Package: luci-lib-base
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, lua, luci-lib-nixio, luci-lib-ip, luci-lib-jsonc, liblucihttp-lua
 Source: feeds/luci/libs/luci-lib-base
 Section: luci
 Architecture: all
 Installed-Size: 12486
-Filename: luci-lib-base_git-20.296.73795-2df760c_all.ipk
-Size: 13309
-SHA256sum: f5c6145cedf43f2c11a549dcb22aaf4d525582800bc7bf036d242508c33cd3b4
+Filename: luci-lib-base_git-20.297.75914-63aea8f_all.ipk
+Size: 13305
+SHA256sum: 0360213b1684c4e405e61abc6ab2da774d626f0a8f7803bb38619f3dd84684f2
 Description:  basic libraries for luci
 
 Package: luci-lib-ip
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, liblua, libnl-tiny
 Source: feeds/luci/libs/luci-lib-ip
 License: Apache-2.0
 Section: luci
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 10772
-Filename: luci-lib-ip_git-20.296.73795-2df760c_arm_cortex-a15_neon-vfpv4.ipk
-Size: 11627
-SHA256sum: 8f6b570501660c7524b7187f1a9a154f4bf9a80267b5c90f72fc7c55ffb52190
+Filename: luci-lib-ip_git-20.297.75914-63aea8f_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11587
+SHA256sum: 9a7317f9480564ab007a2f3b8231eeb17b351a5faa14d9a719cbcfd3b5bc7e78
 Description:  Lua library for IP calculation and routing information
 
 Package: luci-lib-jsonc
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, liblua, libjson-c
 Source: feeds/luci/libs/luci-lib-jsonc
 Section: luci
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 3847
-Filename: luci-lib-jsonc_git-20.296.73795-2df760c_arm_cortex-a15_neon-vfpv4.ipk
+Filename: luci-lib-jsonc_git-20.297.75914-63aea8f_arm_cortex-a15_neon-vfpv4.ipk
 Size: 4649
-SHA256sum: b943f1c409997c465596c1fb28163561a635f1688eff2b2507d93658ed5b20a0
+SHA256sum: 4c4ed1b9c11b84c1c0040039ee1e027fa4d3d640ac73d1183f3085b87c041e9c
 Description:  Lua binding for JSON-C
 
 Package: luci-lib-nixio
-Version: git-20.296.73795-2df760c
+Version: git-20.297.75914-63aea8f
 Depends: libc, liblua
 Source: feeds/luci/libs/luci-lib-nixio
 License: Apache-2.0
 Section: luci
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 29823
-Filename: luci-lib-nixio_git-20.296.73795-2df760c_arm_cortex-a15_neon-vfpv4.ipk
-Size: 30360
-SHA256sum: c966e1dcdfd4eab4e6793184fcf1c61831197776eaf5cdbe0f98f95c689c7693
+Installed-Size: 29822
+Filename: luci-lib-nixio_git-20.297.75914-63aea8f_arm_cortex-a15_neon-vfpv4.ipk
+Size: 30350
+SHA256sum: eece29c3a8398164a464c699bb5f3f7f79c330868d9ca0718e7082de2a4ab792
 Description:  NIXIO POSIX library
 
