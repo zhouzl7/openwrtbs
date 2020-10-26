@@ -2,6 +2,8 @@
 .DS_Store
 .*.swp
 /env
+/MobiSys19-master/code/local-server/__pycache__
+/openwrt-master
 /dl
 /.config
 /.config.old
