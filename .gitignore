@@ -1,6 +1,7 @@
 *.o
 .DS_Store
 .*.swp
+/MobiSys19-master/code/local-server/__pycache__
 /env
 /dl
 /.config
