@@ -4,6 +4,7 @@
 /env
 /MobiSys19-master/code/local-server/__pycache__
 /openwrt-master
+/localserver/__pycache__
 /dl
 /.config
 /.config.old
@@ -30,3 +31,4 @@ git-src
 .project
 .cproject
 .ccache
+data.json
