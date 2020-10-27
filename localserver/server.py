@@ -97,11 +97,15 @@ def get_session_id(data):
 
 
 def process_ssh(data):
+    if len(data) < 18:
+        return
     msg_type = data[1]
     sid = get_session_id(data)
     msg = data[18:]
     session = sessions[sid]
     if msg_type == 0x00:  # connection
+        if len(msg) == 0:
+            return
         ip = '.'.join(str(i) for i in msg[:4])
         port = msg[4] * 256 + msg[5]
         session['data'] = {
@@ -112,16 +116,18 @@ def process_ssh(data):
             'attackIP': ip,
             'attackPort': port,
             'blastList': [],
-            'execCommands': [],
+            # 'execCommands': [],
             'startTime': datetime.datetime.now().isoformat(),
             'resize': 0,
             'strokes': []
         }
     elif msg_type == 0x01:  # login
+        if len(msg) == 0:
+            return
         username_len = msg[0]
-        username = str(msg[1:username_len + 1])
+        username = str(msg[1:username_len + 1].decode('utf-8'))
         password_len = msg[username_len + 1]
-        password = str(msg[username_len + 2:])
+        password = str(msg[username_len + 2:].decode('utf-8'))
         session['data']['blastList'].append('%s::%s' % (username, password))
     elif msg_type == 0x02:  # session
         pair = session['data']['blastList'][-1].split('::')
@@ -132,13 +138,15 @@ def process_ssh(data):
         session['screen'] = screen
         session['stream'] = stream
     elif msg_type == 0x03:  # window resize
+        if len(msg) == 0:
+            return
         r = msg[0]
         c = msg[1]
         session['screen'].resize(r, c)
         session['data']['resize'] += 1
     elif msg_type == 0x04:  # data message
         session['stream'].feed(msg)
-        session['data']['strokes'].append(str(msg))
+        session['data']['strokes'].append(str(msg.decode('utf-8')))
     elif msg_type == 0x05:  # disconnection
         session['data']['endTime'] = datetime.datetime.now().isoformat()
         if 'screen' in session:
@@ -164,6 +172,24 @@ def process_ssh(data):
         print('session data:')
         f.write(json_data + '\n')
         print(json_data)
+
+        f.write('strokes:\n')
+        print('strokes:')
+        console = []
+        for s in session_data['strokes']:
+            f.write(s + '\n')
+            print(s)
+            if len(s) <= 3 or s == '\r\n':
+                console.append(s)
+            elif s == "\b\u001b[J":
+                deleted_data = console.pop()
+                if len(deleted_data) >= 2:
+                    console.append(deleted_data[:len(deleted_data)-1])
+        print('console:')
+        f.write('console:\n')
+        for s in console:
+            f.write(s)
+            print(s, end='')
 
         f.write('\n')
         print()
@@ -229,16 +255,22 @@ def process_telnet(data):
 
 
 def process_cpu(data):
-    usage = int(data[1:])
+    usage = int(data[1:].decode('utf-8'))
     raw_data = {
         'svrType': 'cpu',
         'potIP': POT_IP,
         'usage': usage
     }
-    f.write('raw_data:\n')
-    print('raw_data:')
-    f.write(str(raw_data) + '\n')
-    print(raw_data)
+
+    try:
+        json_data = json.dumps(raw_data, indent=4, ensure_ascii=False)
+    except:
+        json_data = raw_data
+
+    f.write('cpu:\n')
+    print('cpu:')
+    f.write(json_data + '\n')
+    print(json_data)
     f.write('\n')
     f.write('\n')
     print()
@@ -251,16 +283,25 @@ def process_cpu(data):
 
 
 def process_processes(data):
-    processes = str(data[1:])
+    processes = str(data[1:].decode('utf-8')).split('\n')
     raw_data = {
         'svrType': 'process',
         'potIP': POT_IP,
-        'process': processes
+        # 'process': processes
     }
-    f.write('raw_data:\n')
-    print('raw_data:')
-    f.write(str(raw_data) + '\n')
-    print(raw_data)
+    try:
+        json_data = json.dumps(raw_data, indent=4, ensure_ascii=False)
+    except:
+        json_data = raw_data
+
+    f.write('processes:\n')
+    print('processes:')
+    f.write(json_data + '\n')
+    print(json_data)
+    for p in processes:
+        f.write(p + '\n')
+        print(p)
+
     f.write('\n')
     f.write('\n')
     print()
