@@ -4,10 +4,10 @@ Depends: libc
 License: GPL-2.0
 Section: net
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 14422
+Installed-Size: 14423
 Filename: netcat_0.7.1-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 15500
-SHA256sum: b4f4274fe95a7f9850efc746c05782f7514896a136008943232ddcd0f60ca3b1
+Size: 15505
+SHA256sum: 8e65c0a8f40dd9909475e7cf6e5a033de7bf83ac36167f83f0e11c74a2b34b23
 Description:  Netcat is a featured networking utility which reads and writes data across network connections, using the TCP/IP protocol.
  It is designed to be a reliable "back-end" tool that can be used directly or easily driven by other programs and scripts. At the same time, it is a feature-rich network debugging and exploration tool, since it can create almost any kind of connection you would need and has several interesting built-in capabilities.
 
