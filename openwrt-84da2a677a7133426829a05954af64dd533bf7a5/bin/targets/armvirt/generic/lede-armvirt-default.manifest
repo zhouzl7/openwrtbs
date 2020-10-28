@@ -1,4 +1,4 @@
-base-files - 172-r0-bb06e9e
+base-files - 172-r0-90e8f2b
 busybox - 1.26.2-1
 dnsmasq - 2.76-6
 dropbear - 2016.74-1
@@ -41,6 +41,7 @@ libuclient - 2016-12-09-52d955fd-1
 libxtables - 1.4.21-2
 logd - 2017-01-26-14839f0a-1
 mtd - 21
+netcat - 0.7.1-2
 netifd - 2017-01-25-650758b1-1
 odhcp6c - 2017-01-07-d420f493-1
 odhcpd - 2017-01-26-c4f9ace5-1

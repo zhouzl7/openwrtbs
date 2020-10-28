@@ -259,6 +259,7 @@ def process_cpu(data):
     raw_data = {
         'svrType': 'cpu',
         'potIP': POT_IP,
+        'time': datetime.datetime.now().isoformat(),
         'usage': usage
     }
 
@@ -287,6 +288,7 @@ def process_processes(data):
     raw_data = {
         'svrType': 'process',
         'potIP': POT_IP,
+        'time': datetime.datetime.now().isoformat()
         # 'process': processes
     }
     try:

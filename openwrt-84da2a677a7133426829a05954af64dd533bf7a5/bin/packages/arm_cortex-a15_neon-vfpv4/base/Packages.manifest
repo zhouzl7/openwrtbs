@@ -8,10 +8,10 @@ Section: base
 Essential: yes
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 219838
+Installed-Size: 219839
 Filename: busybox_1.26.2-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 220580
-SHA256sum: 1369589cbf6f16f23631f93ccd0555c432f7235f6595e9e865a48eb258ff1a8d
+Size: 220564
+SHA256sum: e0bad38b10b2c7aff82f8ead13af7d0695010bae6e8012eb52843934391b13ab
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -24,10 +24,10 @@ LicenseFiles: COPYING
 Section: net
 Require-User: dnsmasq=453:dnsmasq=453
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 99251
+Installed-Size: 99252
 Filename: dnsmasq_2.76-6_arm_cortex-a15_neon-vfpv4.ipk
-Size: 100069
-SHA256sum: 8a8022fa0394ab1fc4c704be04707b6960e5502df930bd651aef48c6520ec3cc
+Size: 100068
+SHA256sum: 900c6022279550bec44d2adcd89d872d5349fe8e9701e62315e5dec9ae2ee8c2
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
 Package: dropbear
@@ -38,10 +38,10 @@ License: MIT
 LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
 Section: net
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 83030
+Installed-Size: 83028
 Filename: dropbear_2016.74-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 83759
-SHA256sum: 0a67bf9389307affd4af82d7f71e50dcd86c60ee1f69f5326c219435a15ea468
+Size: 83764
+SHA256sum: 1ed55fc749c27dbea2f713e8178f5cd7f3f5ca1c9f853ef24d97c8fb9df0708b
 Description:  A small SSH2 server/client designed for small memory environments.
 
 Package: firewall
@@ -52,10 +52,10 @@ License: ISC
 Section: net
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 38609
+Installed-Size: 38611
 Filename: firewall_2017-01-13-37cb4cb4-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 39516
-SHA256sum: 11319c20b38d3180a3320065a10a5f7e0a9a6a8880e318e8e6b9202047c03660
+Size: 39528
+SHA256sum: 6c655c632dbeb1ecebd46f0f3b6a088e648a86f479480c920accd99222c5bf3a
 Description:  This package provides a config-compatible C implementation of the UCI firewall.
 
 Package: ip6tables
@@ -67,8 +67,8 @@ Section: net
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 212
 Filename: ip6tables_1.4.21-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 922
-SHA256sum: ca5bae6f30fe6f6c93dafab0aa04fb4c2a065a53bfd588c32d41e3fe2a11a9f3
+Size: 926
+SHA256sum: 40c17d216890f3dc8c0f7e0c24267af24dcdc4becbde00829d4e446c9134309b
 Description:  IPv6 firewall administration tool
 
 Package: iptables
@@ -78,10 +78,10 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: net
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 22938
+Installed-Size: 22939
 Filename: iptables_1.4.21-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 23715
-SHA256sum: 40ac72c87ea5f54f7f1ea67315c8923e87d6e508c672132bf5b384b45e1f5667
+Size: 23743
+SHA256sum: a1393662afe34b991c7a912d32c393e03326f3162caf33d76994766c8f2bc0d3
 Description:  IP firewall administration tool.
  
  Matches:
@@ -127,10 +127,10 @@ License: ISC
 Section: utils
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 5050
+Installed-Size: 5049
 Filename: jshn_2016-11-29-77a62937-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 5831
-SHA256sum: 65de8f076da8b2fb2268badcc7dbb4729aca4b36886ae225dbf07932193a6e20
+Size: 5835
+SHA256sum: e7fadacf9f72bce52f9383f31d707837be298eeb8eb214c7798f3700b5e88ffd
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
@@ -141,10 +141,10 @@ License: ISC
 Section: base
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 7941
+Installed-Size: 7940
 Filename: jsonfilter_2016-07-02-dea067ad-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 8699
-SHA256sum: 33558e92f1100ff2064ac4cce55a2fe8b1e1d1b3bfaf6d6fccb20598c2a3e14a
+Size: 8701
+SHA256sum: 0b24fd95928ca9019a0d5ad12827548a1b3c0eff18658003aeee544306b22935
 Description:  OpenWrt JSON filter utility
 
 Package: lede-keyring
@@ -155,10 +155,10 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 866
+Installed-Size: 867
 Filename: lede-keyring_2017-01-20-a50b7529-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 1656
-SHA256sum: 538f7726d1e2244f77ce612e3acc7d904295c41ef0bf39e7d05adec8554799f1
+Size: 1652
+SHA256sum: 09054f0120af33c91c688df04ec787a1d2dc99d558ae3146faebff6ca458d70f
 Description:  The keyring of with the developer using and gpg public keys.
 
 Package: libblobmsg-json
@@ -169,10 +169,10 @@ License: ISC
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 3104
+Installed-Size: 3101
 Filename: libblobmsg-json_2016-11-29-77a62937-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 3830
-SHA256sum: 730fbe53530c23edbe379269ebffded8bca4dfb6cf5212373bf4ab76710431c6
+Size: 3829
+SHA256sum: b6172b007bc75a55f8afa19aa43fc0aa4c0bf9762fc64216bd8cd0b7803ef2f2
 Description:  blobmsg <-> json conversion library
 
 Package: libip4tc
@@ -184,8 +184,8 @@ Section: libs
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 17420
 Filename: libip4tc_1.4.21-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 18142
-SHA256sum: b7430198ad7a7b307cd83ad87807897ddc9c83ba4dccc4f488b6712dd0b9858d
+Size: 18138
+SHA256sum: f932095ef7a0057ae571470dba72f49ac0bc399592d5758c1949cdc1d1af9281
 Description:  IPv4 firewall - shared libiptc library
 
 Package: libip6tc
@@ -195,10 +195,10 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: libs
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 16997
+Installed-Size: 16996
 Filename: libip6tc_1.4.21-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 17719
-SHA256sum: a8ea4f19edf445d4bf693e627544faa3caa9fb908bff39f775b74097a04bd46a
+Size: 17720
+SHA256sum: d483d5d005cb220a676d194f31ea8b10d055a97936c1b569ff4b3058d409cb17
 Description:  IPv6 firewall - shared libiptc library
 
 Package: libjson-c
@@ -212,8 +212,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 13972
 Filename: libjson-c_0.12.1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 14715
-SHA256sum: 713b47dd87c3130335b212292fa17bd1aec8e1997073505dde52c7d015b63179
+Size: 14717
+SHA256sum: cd3ac3d8842c7c9677659f128079a8f7a418ecd8ef61766e17061b826a38f609
 Description:  This package contains a library for javascript object notation backends.
 
 Package: libjson-script
@@ -226,27 +226,9 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 4239
 Filename: libjson-script_2016-11-29-77a62937-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 4962
-SHA256sum: 66269a37f6cb8f965ced8df0940a1d23ec7effdfe58fe66ca12e4a20335bdd93
+Size: 4964
+SHA256sum: e695fed033c6be901d2eab22a0d49a4de7ec4580e552f40dbbf8d4859e84adee
 Description:  Minimalistic JSON based scripting engine
-
-Package: liblua
-Version: 5.1.5-1
-Depends: libc
-Source: package/utils/lua
-License: MIT
-LicenseFiles: COPYRIGHT
-Section: libs
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 60996
-Filename: liblua_5.1.5-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 61605
-SHA256sum: dfed34d5d8ecf72de6f8e7e9cea4be38f1dea0aa20216bb676b9e03a7e4609d0
-Description:  Lua is a powerful light-weight programming language designed for extending 
- applications. Lua is also frequently used as a general-purpose, stand-alone 
- language. Lua is free software.
- This package contains the Lua shared libraries, needed by other programs.
 
 Package: libnl-tiny
 Version: 0.1-5
@@ -256,10 +238,10 @@ License: LGPL-2.1
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 12157
+Installed-Size: 12156
 Filename: libnl-tiny_0.1-5_arm_cortex-a15_neon-vfpv4.ipk
-Size: 12905
-SHA256sum: b1259ee3cb7189265aca843b570982f0c595d6b723d4807d5ef633450090f868
+Size: 12900
+SHA256sum: 0d6d38717b7c042f9dee3224bac1d42b6201d1bc3a298e2c603d8ade59468815
 Description:  This package contains a stripped down version of libnl
 
 Package: libubox
@@ -270,25 +252,11 @@ License: ISC
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 16832
+Installed-Size: 16831
 Filename: libubox_2016-11-29-77a62937-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 17529
-SHA256sum: 2bc5930f94afdf1594daa8e98dbab3f429a68320279c265c7346e7b8854e076d
+Size: 17515
+SHA256sum: 0b0a7d5f94c455d71844a17ec363453b2e1ce2bf554c386d502a27a32e54e2f6
 Description:  Basic utility library
-
-Package: libubus-lua
-Version: 2017-01-22-6f4e11e1-1
-Depends: libc, libubus, liblua
-Source: package/system/ubus
-License: LGPL-2.1
-Section: libs
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 6473
-Filename: libubus-lua_2017-01-22-6f4e11e1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 7277
-SHA256sum: 6b0654c393135566d5a11a245a7df7ab1c2ec636776359333657582d70545856
-Description:  Lua binding for the OpenWrt RPC client
 
 Package: libubus
 Version: 2017-01-22-6f4e11e1-1
@@ -298,10 +266,10 @@ License: LGPL-2.1
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 9088
+Installed-Size: 9090
 Filename: libubus_2017-01-22-6f4e11e1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 9821
-SHA256sum: ee67472dd56aeafd825e1270ffa21a93785cce59978d605dabc77bdf455468f1
+Size: 9820
+SHA256sum: 6a760cda83ecd2df423cb693042804338dc8a53882bc7eaf4d7033bd052d0a57
 Description:  OpenWrt RPC client library
 
 Package: libuci
@@ -312,10 +280,10 @@ License: LGPL-2.1
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 14909
+Installed-Size: 14911
 Filename: libuci_2016-07-04-e1bf4356-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 15645
-SHA256sum: 75166beaa011c72817277c440869d70eef4fc568b430ce08fb89030bd98df459
+Size: 15649
+SHA256sum: 8bf4f74f05ea8faa53e15900b865df2ed92f2c7b6b7b76f2e3b95bf11a3f75ac
 Description:  C library for the Unified Configuration Interface (UCI)
 
 Package: libuclient
@@ -326,10 +294,10 @@ License: ISC
 Section: libs
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 8823
+Installed-Size: 8822
 Filename: libuclient_2016-12-09-52d955fd-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 9598
-SHA256sum: dc1bf9a5a6388ed526c49977dc2650d21933ca14af54bdd78a210b303a9958bb
+Size: 9610
+SHA256sum: 0ee41fb6a2611817b82a5170114c688718090be1d782672d4635940e5316d484
 Description:  HTTP/1.1 client library
 
 Package: libxtables
@@ -339,10 +307,10 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: libs
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 36682
+Installed-Size: 36680
 Filename: libxtables_1.4.21-2_arm_cortex-a15_neon-vfpv4.ipk
-Size: 37296
-SHA256sum: f3045d5a9c476d99226c4b1b4a826a2c96626955412d4addb01365322ac4fab7
+Size: 37319
+SHA256sum: 4960c0aab31c67f4856ce2bb30a999336368b958baa50ad2104f4ea6d2b2396a
 Description:  IPv4/IPv6 firewall - shared xtables library
 
 Package: logd
@@ -355,27 +323,9 @@ Maintainer: John Crispin <john@phrozen.org>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 9107
 Filename: logd_2017-01-26-14839f0a-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 9883
-SHA256sum: 6efca17f1fe5d0d62f951f54068c1cf30813a6f4ffaff516cb94077cba65477e
+Size: 9882
+SHA256sum: 4bc2c5cf19e95297983189065bd870f153f67b53d9c309c0ef7e720d7755617c
 Description:  OpenWrt system log implementation
-
-Package: lua
-Version: 5.1.5-1
-Depends: libc, liblua
-Source: package/utils/lua
-License: MIT
-LicenseFiles: COPYRIGHT
-Section: lang
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 4278
-Filename: lua_5.1.5-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 5118
-SHA256sum: 5ff5a76b7e07d4cbbdeeff88b64b1aa3a2645aa11ae2d8910a83fbfa4282759c
-Description:  Lua is a powerful light-weight programming language designed for extending 
- applications. Lua is also frequently used as a general-purpose, stand-alone 
- language. Lua is free software.
- This package contains the Lua language interpreter.
 
 Package: mtd
 Version: 21
@@ -384,10 +334,10 @@ Source: package/system/mtd
 License: GPL-2.0+
 Section: utils
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 11366
+Installed-Size: 11363
 Filename: mtd_21_arm_cortex-a15_neon-vfpv4.ipk
-Size: 12100
-SHA256sum: f9ed8a39082899507d0d3f541594f0efa76306ab1f829a4f1cc1cb8050135314
+Size: 12106
+SHA256sum: 90b75f2d6f5d5a53cf240cdab75b58d16f36e894caedf052717b8f6919d61858
 Description:  This package contains an utility useful to upgrade from other firmware or 
  older OpenWrt releases.
 
@@ -399,10 +349,10 @@ License: GPL-2.0
 Section: base
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 63390
+Installed-Size: 63387
 Filename: netifd_2017-01-25-650758b1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 64172
-SHA256sum: 926c35a7433ada276b6264acd77661ef5811e4bf889aabb2cb18a3c3d560cbc8
+Size: 63922
+SHA256sum: d5f4bf18d1ef54690c96afc8d4c4cf927651ee07e2cdc58fb304f0a15ece130f
 Description:  OpenWrt Network Interface Configuration Daemon
 
 Package: odhcp6c
@@ -415,8 +365,8 @@ Maintainer: Hans Dedecker <dedeckeh@gmail.com>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 22065
 Filename: odhcp6c_2017-01-07-d420f493-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 22801
-SHA256sum: 6b25e80c91b28956e8a07aa6bc9503ec857dbf9718131c8ee4e4e28d505a7ff5
+Size: 22805
+SHA256sum: abd7e3ca8dcb0ed2f747dfa5fe8dfededfa447a79c2f773a1427241d641e90cc
 Description:  Embedded DHCPv6-client for OpenWrt
 
 Package: odhcpd
@@ -427,10 +377,10 @@ License: GPL-2.0
 Section: net
 Maintainer: Hans Dedecker <dedeckeh@gmail.com>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 30829
+Installed-Size: 30819
 Filename: odhcpd_2017-01-26-c4f9ace5-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 31773
-SHA256sum: 9357cad161b4db9c62ca6306bee1bbf444c62b50aa4df1679ab7a5b381255262
+Size: 31616
+SHA256sum: 269aa9b1de69f858b72c06970b0fc797b9b4a366143af31f1ef1befc848ba1a0
 Description:  odhcpd is a daemon for serving and relaying IP management protocols to
  configure clients and downstream routers. It tries to follow the RFC 6204
  requirements for IPv6 home routers.
@@ -449,8 +399,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 10166
 Filename: ppp-mod-pppoe_2.4.7-10_arm_cortex-a15_neon-vfpv4.ipk
-Size: 10909
-SHA256sum: 68edd294bec2e9776d313f632bea0cc3b67bf5993aa4539f8a567d79440df8de
+Size: 10908
+SHA256sum: 333d03f8f782fdf0892656cc84ff37afca4b9107bed8db91e5f07ecfe15efe6d
 Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
 
 Package: ppp
@@ -463,52 +413,9 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 106444
 Filename: ppp_2.4.7-10_arm_cortex-a15_neon-vfpv4.ipk
-Size: 107134
-SHA256sum: d5b01afd9227eb049eaec068e419b0b2b7b6391439ea24c4c88c98be6d9ce065
+Size: 107161
+SHA256sum: 1858c3c15f83ba23583d37ac0385aa08bec58a019c0525c856fc067a932ec486
 Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
-
-Package: rpcd-mod-file
-Version: 2016-12-03-0577cfc1-1
-Depends: libc, libubus, libubox, rpcd
-Source: package/system/rpcd
-License: ISC
-Section: utils
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 5259
-Filename: rpcd-mod-file_2016-12-03-0577cfc1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 6012
-SHA256sum: 5c8355f59d8e06b5e168948d361c7f559b9a4677ab4c10d14d9e0c04d6a4ed11
-Description:  Provides ubus calls for file and directory operations.
-
-Package: rpcd-mod-iwinfo
-Version: 2016-12-03-0577cfc1-1
-Depends: libc, libubus, libubox, rpcd, libiwinfo
-Source: package/system/rpcd
-License: ISC
-Section: utils
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 5759
-Filename: rpcd-mod-iwinfo_2016-12-03-0577cfc1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 6530
-SHA256sum: a8b1ce86ee254760c322042a74dec930f31ac34c3c2a8b2259ed11aab82a53f2
-Description:  Provides ubus calls for accessing iwinfo data.
-
-Package: rpcd
-Version: 2016-12-03-0577cfc1-1
-Depends: libc, libubus, libubox, libuci, libblobmsg-json
-Source: package/system/rpcd
-License: ISC
-Section: utils
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 17330
-Filename: rpcd_2016-12-03-0577cfc1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 18143
-SHA256sum: c873171dc5f32866dae0037dea7b0545f65fae8ad714273238791e09bfae4191
-Description:  This package provides the UBUS RPC backend server to expose various
- functionality to frontend programs via JSON-RPC.
 
 Package: ubox
 Version: 2017-01-26-14839f0a-1
@@ -518,10 +425,10 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 14512
+Installed-Size: 14513
 Filename: ubox_2017-01-26-14839f0a-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 15248
-SHA256sum: 353b188cc5cea030aafcff1cc69810de758bb8f6f25dacac42f9894b6912e2dc
+Size: 15246
+SHA256sum: fc2d4a542684c70cb5d07b849057d16cd3595bb11e07bc25fb62c8361afd7059
 Description:  OpenWrt system helper toolbox
 
 Package: ubus
@@ -534,8 +441,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 4571
 Filename: ubus_2017-01-22-6f4e11e1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 5321
-SHA256sum: 734a0910d7c10a798fd03892d09770cdbc8869d647a87dbfe2bfba1c38424bb2
+Size: 5316
+SHA256sum: 7f1f8ba370a9b59646fed1a468e982b331a15d6b768b484a8b33f7c088bb5a58
 Description:  OpenWrt RPC client utility
 
 Package: ubusd
@@ -546,10 +453,10 @@ License: LGPL-2.1
 Section: base
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 9592
+Installed-Size: 9591
 Filename: ubusd_2017-01-22-6f4e11e1-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 10344
-SHA256sum: b547fe769af0ef08d2e3b15714d8deaaa2df9f56317af4994e9d858d2c01bffe
+Size: 10345
+SHA256sum: bd905cd558377d0ef19b5677aa8d3ab1e596cb620ce5d13dd99d42f479c9d1e4
 Description:  OpenWrt RPC daemon
 
 Package: uci
@@ -563,7 +470,7 @@ Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 6380
 Filename: uci_2016-07-04-e1bf4356-1_arm_cortex-a15_neon-vfpv4.ipk
 Size: 7172
-SHA256sum: 7622d68400dd2915374672a68adc9967bfe3720835c4b8a318e263244acfa8f7
+SHA256sum: e42a532f04d0c2999ac4a02a027705e75df6f42c4ac8ac1265a6bbb4ab07597e
 Description:  Utility for the Unified Configuration Interface (UCI)
 
 Package: uclient-fetch
@@ -574,10 +481,10 @@ License: ISC
 Section: net
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 6610
+Installed-Size: 6613
 Filename: uclient-fetch_2016-12-09-52d955fd-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 7396
-SHA256sum: fd3525abfe1be2dbd11f1354754442654cc17fe2d1de4af3802901421f969088
+Size: 7391
+SHA256sum: e1ee6cf17bb072fe793038b7769f01fce601f81d8b3fc4c96a23480bc0c2b846
 Description:  Tiny wget replacement using libuclient
 
 Package: usign
@@ -588,9 +495,9 @@ License: ISC
 Section: base
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: arm_cortex-a15_neon-vfpv4
-Installed-Size: 10616
+Installed-Size: 10615
 Filename: usign_2015-07-04-ef641914-1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 11377
-SHA256sum: d18c26888ebc2811156373a22b27c0863e18b5e1ab82b9c429abd4f412a0b506
+Size: 11369
+SHA256sum: 4fdc2d977db5c726e27550fb186066d0b3baeb807f7386fe4ef3eb4d485a194f
 Description:  OpenWrt signature verification utility
 
